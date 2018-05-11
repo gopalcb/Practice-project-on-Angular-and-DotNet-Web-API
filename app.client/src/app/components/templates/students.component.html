@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Student List</div>
+    <div class="panel-body">
+        <button class="btn btn-secondary" [routerLink]="['/student', 0]">Add Student</button>
+        <hr/>
+        
+        <input #searchBox id="" (keyup)="search(searchBox.value)" placeholder="Search Student" />
+
+        <hr/>
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of students">
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.email}}</td>
+                <td>
+                    <button type="button" (click)="edit(student)" class="btn btn-secondary btn-sm">Edit</button>
+                    <button type="button" (click)="delete(student)" class="btn btn-secondary btn-sm">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
