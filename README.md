@@ -11,7 +11,7 @@ TypeScript
 ### Commands:
 
 ng new: Create new app
-
+ 
 ng generate: Generate components
 
 ng serve: Run server
