@@ -17,7 +17,7 @@ ng generate: Generate components
 ng serve: Run server
 
 
-### Install the Angular CLI:
+### Install the Angular CLI: 
 
 ```npm
 npm install -g @angular/cli
