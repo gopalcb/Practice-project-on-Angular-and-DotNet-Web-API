@@ -19,7 +19,7 @@ ng serve: Run server
 
 ### Install the Angular CLI: 
 
-```npm
+```npm 
 npm install -g @angular/cli
 ```
 
